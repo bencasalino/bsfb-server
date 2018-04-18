@@ -25,8 +25,8 @@ app.get("/", (request, response) => {
 app.get("/managers", (request, response) => {
   queries
     .list("managers")
-    .then(capstone => {
-      response.json({ capstone });
+    .then(managers => {
+      response.json({ managers });
     })
     .catch(console.error);
 });
