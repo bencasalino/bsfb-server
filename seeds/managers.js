@@ -21,6 +21,7 @@ exports.seed = function (knex, Promise) {
           finals: "4",
           titles: "2",
         },
+
         {
           id: 2,
           manager: "Jon",
