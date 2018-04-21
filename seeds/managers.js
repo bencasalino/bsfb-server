@@ -87,7 +87,6 @@ exports.seed = function (knex, Promise) {
           titles: "0",
         },
         {
-
           id: 6,
           manager: "Breeden",
           team_name: "The Mau5Trap",
