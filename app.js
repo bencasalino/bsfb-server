@@ -30,15 +30,6 @@ app.get("/managers", (request, response) => {
     })
     .catch(console.error);
 });
-// gets the managers data table by location name
-app.get("/managers/:location", (request, response) => {
-  queries
-    .read(request.params.location, "managers")
-    .then(managers => {
-      managers ? response.json({ managers }) : response.sendStatus(404);
-    })
-    .catch(console.error);
-});
 
 // it hit none of the paths
 app.use((request, response) => {
