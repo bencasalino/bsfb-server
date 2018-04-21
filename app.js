@@ -9,7 +9,7 @@ app.use(cors());
 app.use(bodyParser.json());
 
 
-w
+
 // this displays both tables
 app.get("/", (request, response) => {
   queries
